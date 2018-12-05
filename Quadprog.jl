@@ -1,10 +1,10 @@
-#Similar function to quadprog routine in MATLA. Here f(x) = (1/2)*x'*H*x + f'*x,
-#where H is a matrix, f a vector and we have equality as well as
-#boundary restrictions such as Ax <= b, (Aeq)*x = beq, lb <= x <= ub.
+# Similar function to quadprog routine in MATLAB. Here f(x) = (1/2)*x'*H*x + f'*x,
+# where H is a matrix, f a vector and we have equality as well as
+# boundary restrictions such as Ax <= b, (Aeq)*x = beq, lb <= x <= ub.
 
-#This routine uses as basis de Ipopt Solver, speeding up the optimization.
-#but one can use other solvers, just change the usesolver as input of the
-#funtion
+# This routine uses the Ipopt Solver, speeding up the optimization.
+# but one can use other solvers, just change the usesolver as input of the
+# function
 
 using JuMP, Ipopt
 
